@@ -59,3 +59,11 @@ Terminal 3:
 ```
 npm run test
 ```
+
+You may run and re-run tests many times. When you are done with it and want to free up some system resources
+(stop running two blockchains in the background), you need to run these commands to stop them properly:
+
+```
+./scripts/gaia/stop.sh
+./scripts/wasmd/stop.sh
+```
