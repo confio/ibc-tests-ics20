@@ -1,0 +1,4 @@
+REPOSITORY="confio/gaia-ci"
+# Choose from https://hub.docker.com/r/confio/gaia-ci/tags
+VERSION="7.0.1"
+CONTAINER_NAME="gaia"
