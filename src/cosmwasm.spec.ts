@@ -1,4 +1,3 @@
-
 import { Link, testutils } from "@confio/relayer";
 import { assert } from "@cosmjs/utils";
 import test from "ava";
