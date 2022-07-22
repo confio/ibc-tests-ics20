@@ -13,7 +13,7 @@ export async function setupContracts(
   const results: Record<string, number> = {};
 
   for (const name in contracts) {
-    const path = `./src/testdata/${contracts[name]}`;
+    const path = `./testdata/${contracts[name]}`;
     console.info(`Storing ${name} from ${path}...`);
     const wasm = await readFileSync(path);
     const receipt = await cosmwasm.sign.upload(
