@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:16
     steps:
       - checkout
       - restore_cache:
@@ -48,7 +48,7 @@ jobs:
           name: Install nodejs
           # In the current image, `sudo apt install nodejs` requires `sudo apt update` which is too slow
           command: |
-            curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+            curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
             sudo apt-get install -y nodejs
       - run:
           name: Version information
